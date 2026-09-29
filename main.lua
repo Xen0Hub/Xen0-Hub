@@ -38,7 +38,7 @@ local tab = window:CreateTab({
 })
 
 tab:CreateButton({
-    name = "Xen0's Emote Wheel",
+    name = "Emote Wheel",
     callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0EmoteWheel.lua"))()
     end,
