@@ -33,7 +33,7 @@ tab:CreateButton({
 })
 
 local tab = window:CreateTab({
-    name = "Just A Baseplate⬜",
+    name = "Just A Baseplate",
     icon = 8517942534
 })
 
