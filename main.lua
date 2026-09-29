@@ -6,26 +6,33 @@ local window = Rayfield:CreateWindow({
     sidebarLayout = true,
 })
 
-local tab = window:CreateTab({ name = "Classics", icon = 8517942534 })
+local tab = window:CreateTab({
+    name = "Classics",
+    icon = 8517942534
+})
 
 tab:CreateButton({
-    name = "Infinity Yield",
+    name = "Xen0's FE Script",
     callback = function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0InfinityYield.lua'))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0InfinityYield.lua"))()
     end,
 })
 
 tab:CreateButton({
     name = "Simple Spy",
-    callback = function(value)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0SimpleSpy.lua"))()
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0SimpleSpy.lua"))()
     end,
 })
 
-local tab = window:CreateTab({ name = "Game Scripts", icon = 8517942534 })
+local tab = window:CreateTab({
+    name = "Game Scripts",
+    icon = 8517942534
+})
 
 tab:CreateButton({
     name = "Xen0's OG Fly GUI",
     callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0FlyGUI.lua")()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0FlyGUI.lua"))()
+    end,
 })
