@@ -19,9 +19,9 @@ tab:CreateButton({
 })
 
 tab:CreateButton({
-    name = "Simple Spy",
+    name = "Xen0's Remote Spy",
     callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0SimpleSpy.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0RemoteSpy.lua"))()
     end,
 })
 
