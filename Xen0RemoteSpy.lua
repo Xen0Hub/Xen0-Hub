@@ -6,9 +6,9 @@ _G.Code = ""
 task.spawn(function()
     local starterGui = game:GetService("StarterGui")
     local notification = {
-        Title = "Xen0's RemoteSpy",
+        Title = "Xen0 RemoteSpy",
         Text = "By blixxARSENAL",
-        Icon = "rbxassetid://8517942534",
+        Icon = "rbxthumb://type=Asset&id=8517942534&w=150&h=150",
         Duration = 5.5
     }
 
@@ -25,7 +25,7 @@ end)
 
 -- StarterGui.Remote Spy
 G2L["1"] = Instance.new("ScreenGui", game.CoreGui);
-G2L["1"]["Name"] = [[Xen0's RemoteSpy]];
+G2L["1"]["Name"] = [[Xen0]];
 G2L["1"]["ResetOnSpawn"] = false
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
@@ -56,7 +56,7 @@ G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4"]["BackgroundTransparency"] = 1;
 G2L["4"]["Size"] = UDim2.new(0, 58, 0, 14);
 G2L["4"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4"]["Text"] = [[Xen0's RemoteSpy]];
+G2L["4"]["Text"] = [[Xen0]];
 G2L["4"]["Name"] = [[Name]];
 G2L["4"]["Position"] = UDim2.new(0.020, 0, 0.07, 0);
 
