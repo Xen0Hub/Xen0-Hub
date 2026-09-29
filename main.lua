@@ -43,3 +43,15 @@ tab:CreateButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0EmoteWheel.lua"))()
     end,
 })
+
+local tab = window:CreateTab({
+    name = "Badges",
+    icon = 8517942534
+})
+
+tab:CreateButton({
+    name = "Slap Battles",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0SlapBattles.lua"))()
+    end,
+})
