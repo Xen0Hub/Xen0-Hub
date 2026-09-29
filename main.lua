@@ -18,7 +18,7 @@ tab:CreateButton({
     end,
 })
 
-ab:CreateButton({
+tab:CreateButton({
     name = "Xen0's Dex",
     callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0Dex.lua"))()
