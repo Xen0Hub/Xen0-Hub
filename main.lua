@@ -25,14 +25,21 @@ tab:CreateButton({
     end,
 })
 
-local tab = window:CreateTab({
-    name = "Game Scripts",
-    icon = 8517942534
-})
-
 tab:CreateButton({
     name = "Xen0's OG Fly GUI",
     callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0FlyGUI.lua"))()
+    end,
+})
+
+local tab = window:CreateTab({
+    name = "Just A Baseplate⬜",
+    icon = 8517942534
+})
+
+tab:CreateButton({
+    name = "Xen0's Emote Wheel",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0EmoteWheel.lua"))()
     end,
 })
