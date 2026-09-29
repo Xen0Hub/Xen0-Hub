@@ -55,3 +55,10 @@ tab:CreateButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0SlapBattles.lua"))()
     end,
 })
+
+tab:CreateButton({
+    name = "Find The Noobs",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0FindTheNoobs.lua"))()
+    end,
+})
