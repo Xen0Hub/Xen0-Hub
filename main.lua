@@ -18,6 +18,13 @@ tab:CreateButton({
     end,
 })
 
+ab:CreateButton({
+    name = "Xen0's Dex",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0Dex.lua"))()
+    end,
+})
+
 tab:CreateButton({
     name = "Xen0's Remote Spy",
     callback = function()
