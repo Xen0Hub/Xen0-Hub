@@ -6,6 +6,14 @@ local EmbeddedModules = {
 	The main explorer interface
 ]]
 
+task.spawn(function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Xen0 FE Script",
+        Text = "By blixxARSENAL",
+        Icon = "rbxthumb://type=Asset&id=8517942534&w=150&h=150",
+        Duration = 5.5
+    })
+end)
 
 -- Common Locals
 local Main,Lib,Apps,Settings -- Main Containers
