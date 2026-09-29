@@ -98,7 +98,7 @@ task.spawn(function()
 		local notification = {
 		Title = "Xen0 FE Script",
 		Text = "By blixxARSENAL",
-		Icon = "rbxassetid://8517942534",
+		Icon = "rbxthumb://type=Asset&id=8517942534&w=150&h=150",
 		Duration = 5.5
 	}
 
