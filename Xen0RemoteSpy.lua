@@ -36,7 +36,7 @@ G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4"]["BackgroundTransparency"] = 1;
 G2L["4"]["Size"] = UDim2.new(0, 58, 0, 14);
 G2L["4"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4"]["Text"] = [[Remote Spy]];
+G2L["4"]["Text"] = [[Xen0's RemoteSpy]];
 G2L["4"]["Name"] = [[Name]];
 G2L["4"]["Position"] = UDim2.new(0.020, 0, 0.07, 0);
 
