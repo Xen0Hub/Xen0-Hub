@@ -94,6 +94,23 @@ CaptureService = Services.CaptureService
 VoiceChatService = Services.VoiceChatService
 SocialService = Services.SocialService
 
+task.spawn(function()
+		local notification = {
+		Title = "Xen0 FE Script",
+		Text = "By blixxARSENAL",
+		Icon = "rbxassetid://8517942534",
+		Duration = 5.5
+	}
+
+	for _ = 1, 10 do
+		local success = pcall(function()
+			StarterGui:SetCore("SendNotification", notification)
+		end)
+		if success then return end
+		task.wait(1)
+	end
+end)
+
 PlayerGui = cloneref(Players.LocalPlayer:FindFirstChildWhichIsA("PlayerGui"))
 COREGUI = Services.CoreGui or PlayerGui
 IYMouse = cloneref(Players.LocalPlayer:GetMouse())
@@ -12396,26 +12413,6 @@ addcmd('stareat',{'stare'},function(args, speaker)
 		end
 
 		stareLoop = RunService.RenderStepped:Connect(stareFunc)
-	end
-end)
-
-addcmd('unstareat',{'unstare','nostare','nostareat'},function(args, speaker)
-	if stareLoop then
-		stareLoop:Disconnect()
-	end
-end)
-
-RolewatchData = {Group = 0, Role = "", Leave = false}
-RolewatchConnection = Players.PlayerAdded:Connect(function(player)
-	if RolewatchData.Group == 0 then return end
-	if player:IsInGroup(RolewatchData.Group) then
-		if tostring(player:GetRoleInGroup(RolewatchData.Group)):lower() == RolewatchData.Role:lower() then
-			if RolewatchData.Leave == true then
-				Players.LocalPlayer:Kick("\n\nRolewatch\nPlayer \"" .. tostring(player.Name) .. "\" has joined with the Role \"" .. RolewatchData.Role .. "\"\n")
-			else
-				notify("Rolewatch", "Player \"" .. tostring(player.Name) .. "\" has joined with the Role \"" .. RolewatchData.Role .. "\"")
-			end
-		end
 	end
 end)
 
