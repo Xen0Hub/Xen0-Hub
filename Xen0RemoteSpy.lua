@@ -3,6 +3,26 @@ local G2L = {};
 
 _G.Code = ""
 
+task.spawn(function()
+    local starterGui = game:GetService("StarterGui")
+    local notification = {
+        Title = "Xen0's RemoteSpy",
+        Text = "By blixxARSENAL",
+        Icon = "rbxassetid://8517942534",
+        Duration = 5.5
+    }
+
+    for _ = 1, 10 do
+        local success = pcall(function()
+            starterGui:SetCore("SendNotification", notification)
+        end)
+        if success then
+            break
+        end
+        task.wait(1)
+    end
+end)
+
 -- StarterGui.Remote Spy
 G2L["1"] = Instance.new("ScreenGui", game.CoreGui);
 G2L["1"]["Name"] = [[Xen0's RemoteSpy]];
