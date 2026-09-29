@@ -57,7 +57,7 @@ tab:CreateButton({
 })
 
 tab:CreateButton({
-    name = "Find The Noobs",
+    name = "Find The Noobs (350)",
     callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0FindTheNoobs.lua"))()
     end,
