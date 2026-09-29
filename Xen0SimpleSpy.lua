@@ -4,6 +4,7 @@ end
 
 local Players = game:GetService("Players")
 local CoreGui = game:GetService("CoreGui")
+local StarterGui = game:GetService("StarterGui")
 local Highlight =
 	loadstring(
 		game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/highlight.lua")
@@ -43,7 +44,7 @@ local TextLabel = Instance.new("TextLabel")
 
 --Properties:
 
-SimpleSpy2.Name = "Xen0's SimpleSpy"
+SimpleSpy2.Name = "SimpleSpy2"
 SimpleSpy2.ResetOnSpawn = false
 
 Background.Name = "Background"
@@ -2299,7 +2300,23 @@ if not _G.SimpleSpyExecuted then
 		bringBackOnResize()
 		SimpleSpy2.Parent = --[[gethui and gethui() or]]
 			CoreGui
-		_G.SimpleSpyExecuted = true
+				_G.SimpleSpyExecuted = true
+		task.spawn(function()
+			for _ = 1, 10 do
+				local notified = pcall(function()
+					StarterGui:SetCore("SendNotification", {
+						Title = "Xen0 SimpleSpy",
+						Text = "By blixxARSENAL",
+						Icon = "rbxassetid://8517942534",
+						Duration = 5.5,
+					})
+				end)
+				if notified then
+					break
+				end
+				task.wait(1)
+			end
+		end)
 		if not Players.LocalPlayer then
 			Players:GetPropertyChangedSignal("LocalPlayer"):Wait()
 		end
