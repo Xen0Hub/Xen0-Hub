@@ -99,7 +99,7 @@ local function getHumanoid()
 end
 
 tab:CreateSlider({
-    name = "Beat Obbies For Noobs (Gravity)",
+    name = "Beat Obby For Noob",
     range = {0, 196},
     increment = 1,
     value = 20,
@@ -109,18 +109,9 @@ tab:CreateSlider({
     end,
 })
 
-tab:CreateSlider({
-    name = "Beat Obbies For Noobs (Jump Power)",
-    range = {0, 100},
-    increment = 1,
-    value = 43,
-    suffix = "",
-    callback = function(value)
-        local humanoid = getHumanoid()
-
-        if humanoid then
-            humanoid.UseJumpPower = true
-            humanoid.JumpPower = value
-        end
+tab:CreateButton({
+    name = "Beat Obby For Noob GUI",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0SpeedJumpGUI.lua"))()
     end,
 })
