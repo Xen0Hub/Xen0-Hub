@@ -14,7 +14,16 @@ local tab = window:CreateTab({
 tab:CreateButton({
     name = "Xen0's FE Script",
     callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0InfinityYield.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/peyton2465/Dex/master/out.lua"))()
+        local function sendNotification()
+    return pcall(function()
+        StarterGui:SetCore("SendNotification", {
+            Title = "peyton2465 DEX RE",
+            Text = "Notification",
+            Icon = "rbxthumb://type=Asset&id=8517942534&w=150&h=150",
+            Duration = 5
+        })
+    end)
     end,
 })
 
