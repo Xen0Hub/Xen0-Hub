@@ -1,5 +1,25 @@
 local Rayfield = loadstring(game:HttpGet("https://sirius.menu/gen2"))()
 
+task.spawn(function()
+    local starterGui = game:GetService("StarterGui")
+    local notification = {
+        Title = "Xen0 Hub",
+        Text = "By blixxARSENAL",
+        Icon = "rbxthumb://type=Asset&id=8517942534&w=150&h=150",
+        Duration = 5.5,
+    }
+
+    for attempt = 1, 10 do
+        local success = pcall(function()
+            starterGui:SetCore("SendNotification", notification)
+        end)
+        if success then
+            break
+        end
+        task.wait(0.5)
+    end
+end)
+
 local window = Rayfield:CreateWindow({
     name = "Xen0 Hub",
     subtitle = "made by blixxARSENAL",
@@ -14,16 +34,7 @@ local tab = window:CreateTab({
 tab:CreateButton({
     name = "Xen0's FE Script",
     callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/peyton2465/Dex/master/out.lua"))()
-        local function sendNotification()
-    return pcall(function()
-        StarterGui:SetCore("SendNotification", {
-            Title = "peyton2465 DEX RE",
-            Text = "Notification",
-            Icon = "rbxthumb://type=Asset&id=8517942534&w=150&h=150",
-            Duration = 5
-        })
-    end)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0-peyton2465-DEXRE.lua"))()
     end,
 })
 
