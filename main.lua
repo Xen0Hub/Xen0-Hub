@@ -34,7 +34,7 @@ local tab = window:CreateTab({
 tab:CreateButton({
     name = "Xen0's FE Script",
     callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0-peyton2465-DEXRE.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/peyton2465/Dex/master/out.lua"))()
     end,
 })
 
