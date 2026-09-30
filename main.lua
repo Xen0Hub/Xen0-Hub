@@ -89,3 +89,38 @@ tab:CreateButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0FindTheNoobs.lua"))()
     end,
 })
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+local function getHumanoid()
+    local character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+    return character:FindFirstChildOfClass("Humanoid")
+end
+
+tab:CreateSlider({
+    name = "Beat Obbies For Noobs (Gravity)",
+    range = {0, 196},
+    increment = 1,
+    value = 20,
+    suffix = "",
+    callback = function(value)
+        workspace.Gravity = value
+    end,
+})
+
+tab:CreateSlider({
+    name = "Beat Obbies For Noobs (Jump Power)",
+    range = {0, 100},
+    increment = 1,
+    value = 43,
+    suffix = "",
+    callback = function(value)
+        local humanoid = getHumanoid()
+
+        if humanoid then
+            humanoid.UseJumpPower = true
+            humanoid.JumpPower = value
+        end
+    end,
+})
