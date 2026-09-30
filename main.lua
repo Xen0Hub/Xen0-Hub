@@ -39,7 +39,7 @@ tab:CreateButton({
 })
 
 tab:CreateButton({
-    name = "Xen0 ~ peyton2465 FE",
+    name = "Xen0 ~ peyton2465 DEX-RE",
     callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/peyton2465/Dex/master/out.lua"))()
     end,
