@@ -59,6 +59,13 @@ tab:CreateButton({
     end,
 })
 
+tab:CreateButton({
+    name = "Xen0's Executor",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0Executor.lua"))()
+    end,
+})
+
 local tab = window:CreateTab({
     name = "Just A Baseplate",
     icon = 8517942534
