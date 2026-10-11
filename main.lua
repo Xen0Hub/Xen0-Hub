@@ -27,7 +27,7 @@ local window = Rayfield:CreateWindow({
 })
 
 local tab = window:CreateTab({
-    name = "Classics",
+    name = "UNIVERSAL",
     icon = 8517942534
 })
 
@@ -60,9 +60,9 @@ tab:CreateButton({
 })
 
 tab:CreateButton({
-    name = "Xen0's Executor",
+    name = "Xen0's FPS Counter",
     callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0Executor.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0FPS.lua"))()
     end,
 })
 
@@ -120,5 +120,12 @@ tab:CreateButton({
     name = "Beat Obby For Noob GUI",
     callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0SpeedJumpGUI.lua"))()
+    end,
+})
+
+tab:CreateButton({
+    name = "NDS ORBITIUM",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0ORBITIUM.lua"))()
     end,
 })
