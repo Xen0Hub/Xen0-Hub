@@ -334,23 +334,3 @@ end
 return Lllj00
 end
 return i1ijOi(i01L1ooI,{},jiOLol0(...))
-
-task.spawn(function()
-    local starterGui = game:GetService("StarterGui")
-    local notification = {
-        Title = "Xen0 Hub",
-        Text = "By blixxARSENAL",
-        Icon = "rbxthumb://type=Asset&id=8517942534&w=150&h=150",
-        Duration = 5.5,
-    }
-
-    for attempt = 1, 10 do
-        local success = pcall(function()
-            starterGui:SetCore("SendNotification", notification)
-        end)
-        if success then
-            break
-        end
-        task.wait(0.5)
-    end
-end)
