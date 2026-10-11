@@ -78,6 +78,13 @@ tab:CreateButton({
     end,
 })
 
+tab:CreateButton({
+    name = "FE Axirian Glitch",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0Axirian.lua"))()
+    end,
+})
+
 local tab = window:CreateTab({
     name = "Badges",
     icon = 8517942534
