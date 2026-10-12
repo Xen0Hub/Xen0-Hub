@@ -86,7 +86,7 @@ tab:CreateButton({
 })
 
 local tab = window:CreateTab({
-    name = "Badges",
+    name = "Experiences",
     icon = 8517942534
 })
 
@@ -134,5 +134,12 @@ tab:CreateButton({
     name = "NDS ORBITIUM",
     callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0ORBITIUM.lua"))()
+    end,
+})
+
+tab:CreateButton({
+    name = "KAT aimbot",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0KAT.lua"))()
     end,
 })
