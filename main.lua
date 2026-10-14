@@ -90,6 +90,7 @@ tab:CreateButton({
     name = "Server Hop",
     callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0ServerHop.lua")()
+    end,
 })
 
 local tab = window:CreateTab({
@@ -110,14 +111,6 @@ tab:CreateButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0FindTheNoobs.lua"))()
     end,
 })
-
-local Players = game:GetService("Players")
-local LocalPlayer = Players.LocalPlayer
-
-local function getHumanoid()
-    local character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-    return character:FindFirstChildOfClass("Humanoid")
-end
 
 tab:CreateSlider({
     name = "Beat Obby For Noob",
