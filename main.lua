@@ -133,26 +133,15 @@ tab:CreateButton({
     end,
 })
 
-tab:CreateSlider({
-    name = "Beat Obby For Noob",
-    range = {0, 196},
-    increment = 1,
-    value = 20,
-    suffix = "",
-    callback = function(value)
-        workspace.Gravity = value
-    end,
-})
-
 tab:CreateButton({
-    name = "Beat Obby For Noob GUI",
+    name = "Beat Obby For Noob",
     callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0SpeedJumpGUI.lua"))()
     end,
 })
 
 tab:CreateButton({
-    name = "NDS ORBITIUM",
+    name = "Orbitium NDS",
     callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0ORBITIUM.lua"))()
     end,
