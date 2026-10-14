@@ -70,7 +70,7 @@ tab:CreateButton({
 tab:CreateButton({
     name = "Server Hop",
     callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0ServerHop.lua")()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0ServerHop.lua"))()
     end,
 })
 
@@ -96,21 +96,21 @@ tab:CreateButton({
 tab:CreateButton({
     name = "INVINCIBLE",
     callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0INVINCIBLE.lua")()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0INVINCIBLE.lua"))()
     end,
 })
 
 tab:CreateButton({
     name = "JOHN DOE",
     callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0JOHNDOE.lua")()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0JOHNDOE.lua"))()
     end,
 })
     
 tab:CreateButton({
     name = "Server Hop",
     callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0ServerHop.lua")()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0ServerHop.lua"))()
     end,
 })
 
@@ -161,6 +161,6 @@ tab:CreateButton({
 tab:CreateButton({
     name = "Legends Of Speed",
     callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0LegendsOfSpeed.lua")()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0LegendsOfSpeed.lua"))()
     end,
 })
