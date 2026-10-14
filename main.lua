@@ -67,6 +67,13 @@ tab:CreateButton({
     end,
 })
 
+tab:CreateButton({
+    name = "Server Hop",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0ServerHop.lua")()
+    end,
+})
+
 local tab = window:CreateTab({
     name = "Just A Baseplate",
     icon = 8517942534
@@ -86,6 +93,20 @@ tab:CreateButton({
     end,
 })
 
+tab:CreateButton({
+    name = "INVINCIBLE",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0INVINCIBLE.lua")()
+    end,
+})
+
+tab:CreateButton({
+    name = "JOHN DOE",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0JOHNDOE.lua")()
+    end,
+})
+    
 tab:CreateButton({
     name = "Server Hop",
     callback = function()
@@ -134,5 +155,12 @@ tab:CreateButton({
     name = "NDS ORBITIUM",
     callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0ORBITIUM.lua"))()
+    end,
+})
+
+tab:CreateButton({
+    name = "Legends Of Speed",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0LegendsOfSpeed.lua")()
     end,
 })
