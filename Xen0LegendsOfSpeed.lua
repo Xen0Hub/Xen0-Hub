@@ -1,3 +1,5 @@
+if game.PlaceID = 3101667897 then
+
 local SG = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Layout = Instance.new("UIListLayout")
@@ -97,3 +99,9 @@ createButton("Farm GUI", 2, function()
         end
     end)
 end)
+
+else
+
+    print("bye bye")
+
+end
