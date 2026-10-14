@@ -24,6 +24,7 @@ local window = Rayfield:CreateWindow({
     name = "Xen0 Hub",
     subtitle = "made by blixxARSENAL",
     sidebarLayout = true,
+    theme = "frost"
 })
 
 local tab = window:CreateTab({
@@ -85,6 +86,12 @@ tab:CreateButton({
     end,
 })
 
+tab:CreateButton({
+    name = "Server Hop",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0ServerHop.lua")()
+})
+
 local tab = window:CreateTab({
     name = "Experiences",
     icon = 8517942534
@@ -134,12 +141,5 @@ tab:CreateButton({
     name = "NDS ORBITIUM",
     callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0ORBITIUM.lua"))()
-    end,
-})
-
-tab:CreateButton({
-    name = "KAT aimbot",
-    callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0KAT.lua"))()
     end,
 })
