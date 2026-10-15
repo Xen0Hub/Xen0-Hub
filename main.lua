@@ -155,6 +155,13 @@ tab:CreateButton({
 })
 
 tab:CreateButton({
+    name = "Ninja Legends",
+    callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0NinjaLegends.lua"))()
+    end,
+})
+
+tab:CreateButton({
     name = "KAT",
     callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xen0Hub/Xen0-Hub/refs/heads/main/Xen0KAT.lua"))()
