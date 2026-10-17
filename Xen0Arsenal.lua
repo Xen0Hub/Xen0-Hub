@@ -11,10 +11,22 @@ coroutine.resume(coroutine.create(function()
 while  wait(1) do
 coroutine.resume(coroutine.create(function()
 for _,v in pairs(game[players]:GetPlayers()) do
-if v.Name ~= plr.Name and v.Character then 
+if v.Name ~= plr.Name and v.Character then
+v.Character.RightUpperLeg.CanCollide = false
+v.Character.RightUpperLeg.Transparency = 10
+v.Character.RightUpperLeg.Size = Vector3.new(1,1,1)
+ 
+v.Character.LeftUpperLeg.CanCollide = false
+v.Character.LeftUpperLeg.Transparency = 10
+v.Character.LeftUpperLeg.Size = Vector3.new(1,1,1)
+ 
 v.Character.HeadHB.CanCollide = false
 v.Character.HeadHB.Transparency = 10
 v.Character.HeadHB.Size = Vector3.new(15,15,15)
+ 
+v.Character.HumanoidRootPart.CanCollide = false
+v.Character.HumanoidRootPart.Transparency = 10
+v.Character.HumanoidRootPart.Size = Vector3.new(1,1,1)
  
 end
 end
